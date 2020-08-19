@@ -1,0 +1,48 @@
+@import '../../assets/scss/utils';
+
+.avatar-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    svg {
+        width: 100vh;
+        height: 85vh;
+    }
+
+    path {
+        &:hover{
+            fill: $avatar-hover;
+            cursor: pointer;
+        }
+    }
+}
+
+@media(max-width: 850px){
+
+    .avatar-body {
+        svg {
+            width: 50vh;
+        }
+    }
+}
+
+
+@media(max-width: 680px){
+
+    .avatar-body {
+        svg {
+            height: 55vh;
+        }
+    }
+}
+
+@media(max-width: 485px){
+
+    .avatar-body {
+        svg {
+            width: 30vh;
+            height: 50vh;
+        }
+    }
+}
