@@ -1,0 +1,30 @@
+@import '../../assets/scss/utils';
+
+.tooltbar {
+    position: absolute;
+    width: 185px;
+    height: 85px;
+    font-size: 1.6rem;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.37px;
+    text-align: center;
+    color: $text-color;
+    background-color: $cart-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(75, 74, 74, 0.5);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+@media(max-width: 630px){
+
+    .tooltbar{
+        width: 140px;
+        height: 85px;
+    }
+}
