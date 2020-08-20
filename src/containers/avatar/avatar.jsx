@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import Tooltbar from '../tooltbar/tooltbar';
 import Svgs from '../../utils/svgs';
 import useWidth from '../../hooks/useWidth/useWidth';
+import { useTranslation } from 'react-i18next';
 
 import './avatar.scss';
 
-const infosBody = [ 'Cabeça', 'Garganta', 'torax', 'abdomen', '???', '???', 
-    '???', '???', 'Perna Esquerda', 'Perna Direita', 'clitoris', 'pé esquerdo', 'pé direito', 'mão esquerda', 
-    'ombro esquerdo', 'ombro direito', 'mão direita', 'braço esquerdo', 'braço direito', '???', '???'
+const infosBody = ['HEAD', 'NECK', 'CHEST', 'STOMACH', '???', 'BELLY_BUTTON', 
+    'RIGHT_HIP', 'LEFT_HIP', 'RIGHT_LEG', 'LEFT_LEG', 'VULVA', 'RIGHT_FOOT', 'LEFT_FOOT', 
+    'RIGHT_HAND', 'RIGHT_SHOULDER', 'LEFT_SHOULDER', 'LEFT_HAND', 'RIGHT_ARM', 'LEFT_ARM', 'ABDOMEN', '???'
 ];
 
 const Avatar = () => {
@@ -18,6 +19,8 @@ const Avatar = () => {
         x: '0',
         y:'0'
     });
+
+    const { t } = useTranslation();
 
     const width = useWidth();
 
@@ -58,7 +61,7 @@ const Avatar = () => {
                         ? { left: '0', top: '0', position:'relative', width: '100vh' } 
                         : { left: locateInfo.x+'px', top: locateInfo.y+'px' }
                     }
-                    text={locateInfo.text}
+                    text={t(locateInfo.text)}
                 />
             }
         </div>

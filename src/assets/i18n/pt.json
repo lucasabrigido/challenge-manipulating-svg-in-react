@@ -1,0 +1,21 @@
+{
+    "RIGHT_HAND": "mão direita",
+    "RIGHT_ARM": "braço direito",
+    "RIGHT_SHOULDER": "ombro direito",
+    "LEFT_SHOULDER": "ombro esquerdo",
+    "LEFT_ARM": "braço esquerdo",
+    "LEFT_HAND": "mão esquerda",
+    "LEFT_FOOT": "pé esquerdo",
+    "RIGHT_FOOT": "pé direito",
+    "LEFT_LEG": "perna esquerda",
+    "RIGHT_LEG": "perna direita",
+    "VULVA": "vulva",
+    "LEFT_HIP": "quadril esquerdo",
+    "RIGHT_HIP": "quadril direito",
+    "ABDOMEN": "abdômen",
+    "STOMACH": "estômago",
+    "CHEST": "peito",
+    "NECK": "pescoço",
+    "HEAD": "cabeça",
+    "BELLY_BUTTON": "umbigo"
+}
